@@ -6,17 +6,17 @@
 	SELECT COUNT( * ) as "Number of people played a part"
 	FROM movies m
 	JOIN roles r ON r.movie_id = m.id
-     JOIN movies_directors md ON md.movie_id = m.id
+        JOIN movies_directors md ON md.movie_id = m.id
 	JOIN actors a ON a.id = r.actor_id
-     JOIN directors d ON d.id = md.director_id
+        JOIN directors d ON d.id = md.director_id
 	WHERE m.name = 'Lost in Translation'
 3.
 	SELECT *
 	FROM movies m
 	JOIN roles r ON r.movie_id = m.id
-     JOIN movies_directors md ON md.movie_id = m.id
+        JOIN movies_directors md ON md.movie_id = m.id
 	JOIN actors a ON a.id = r.actor_id
-     JOIN directors d ON d.id = md.director_id
+        JOIN directors d ON d.id = md.director_id
 	WHERE m.name = 'Lost in Translation'
 4.
 	SELECT *
